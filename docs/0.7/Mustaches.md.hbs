@@ -276,8 +276,8 @@ Custom delimiters are set with a 'Set delimiter' tag. Set delimiter tags start w
 
 ```html
 \{{foo}}
-  \{{=[[ ]]=}}
-[[bar]]
+  \{{=** **=}}
+**bar**
 ```
 
 Custom delimiters may not contain whitespace or the equals sign.
@@ -294,8 +294,8 @@ var ractive = new Ractive({
     greeted: 'world',
     triple: '<strong>This is a triple-stache</strong>'
   },
-  delimiters: [ '[[', ']]' ],
-  tripleDelimiters: [ '[[[', ']]]' ]
+  delimiters: [ '**', '**' ],
+  tripleDelimiters: [ '***', '***' ]
 });
 ```
 
